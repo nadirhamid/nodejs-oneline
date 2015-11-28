@@ -1,0 +1,13 @@
+{
+  "name": "nodejs-oneline",
+  "description": "Provide minimal abstraction for Node.JS based Oneline communication",
+  "author": "Nadir Hamid",
+  "license":"MIT",
+  "dependencies": {
+      "bson": "x.x.x",
+      "nodejs-websocket": "x.x.x"
+   },
+   "preferGlobal": true,
+   "private": false,
+   "main": "./lib/base.js"
+}
