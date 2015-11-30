@@ -3,6 +3,7 @@
   "description": "Provide minimal abstraction for Node.JS based Oneline communication",
   "author": "Nadir Hamid",
   "license":"MIT",
+  "version": "0.0.2",
   "dependencies": {
       "bson": "x.x.x",
       "nodejs-websocket": "x.x.x"
