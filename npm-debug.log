@@ -1,0 +1,94 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/node-4.1.2/node-v4.1.2-linux-x64/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'publish',
+1 verbose cli   '--tag',
+1 verbose cli   'beta' ]
+2 info using npm@2.11.3
+3 info using node@v4.2.2
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/var/www/dev/oneline-brokers/nodejs-oneline',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /root/.npm/nodejs-oneline/0.0.3-a/package.tgz not in flight; packing
+9 verbose tar pack [ '/root/.npm/nodejs-oneline/0.0.3-a/package.tgz',
+9 verbose tar pack   '/var/www/dev/oneline-brokers/nodejs-oneline' ]
+10 verbose tarball /root/.npm/nodejs-oneline/0.0.3-a/package.tgz
+11 verbose folder /var/www/dev/oneline-brokers/nodejs-oneline
+12 info prepublish nodejs-oneline@0.0.3-a
+13 verbose addLocalTarball adding from inside cache /root/.npm/nodejs-oneline/0.0.3-a/package.tgz
+14 silly cache afterAdd nodejs-oneline@0.0.3-a
+15 verbose afterAdd /root/.npm/nodejs-oneline/0.0.3-a/package/package.json not in flight; writing
+16 verbose afterAdd /root/.npm/nodejs-oneline/0.0.3-a/package/package.json written
+17 silly publish { name: 'nodejs-oneline',
+17 silly publish   description: 'Provide minimal abstraction for Node.JS based Oneline communication',
+17 silly publish   author: { name: 'Nadir Hamid' },
+17 silly publish   license: 'MIT',
+17 silly publish   version: '0.0.3-a',
+17 silly publish   dependencies: { bson: 'x.x.x', 'nodejs-websocket': 'x.x.x' },
+17 silly publish   preferGlobal: true,
+17 silly publish   private: false,
+17 silly publish   main: './lib/base.js',
+17 silly publish   readme: 'NodeJS Oneline Broker\n=============================================================\n\nThis provides a Broker implementation for (http://getoneline.com/).\nIt is used directly in between the client and server and can fully act as either.\n\nMore:\nhttp://getoneline.com/libraries/nodejs_broker\n\nMore on Oneline Brokers:\nhttp://getoneline.com/libraries/\n\nMore on Oneline:\nhttps://pypi.python.org/pypi/Oneline/1.0.0RC1\n',
+17 silly publish   readmeFilename: 'README.md',
+17 silly publish   gitHead: '7c928790910dcd150eab3d8bebae01fe98d067dc',
+17 silly publish   _id: 'nodejs-oneline@0.0.3-a',
+17 silly publish   scripts: {},
+17 silly publish   _shasum: 'b959e5e8ed41dbf81a6afb528d1e6c2347d79a35',
+17 silly publish   _from: '.' }
+18 verbose getPublishConfig undefined
+19 silly mapToRegistry name nodejs-oneline
+20 silly mapToRegistry using default registry
+21 silly mapToRegistry registry https://registry.npmjs.org/
+22 silly mapToRegistry uri https://registry.npmjs.org/nodejs-oneline
+23 verbose publish registryBase https://registry.npmjs.org/
+24 silly publish uploading /root/.npm/nodejs-oneline/0.0.3-a/package.tgz
+25 verbose request uri https://registry.npmjs.org/nodejs-oneline
+26 verbose request sending authorization for write operation
+27 info attempt registry request try #1 at 4:41:17 AM
+28 verbose request using bearer token for auth
+29 verbose request id 9c311f357f3f2fb3
+30 http request PUT https://registry.npmjs.org/nodejs-oneline
+31 http 403 https://registry.npmjs.org/nodejs-oneline
+32 verbose headers { 'content-type': 'application/json',
+32 verbose headers   'cache-control': 'max-age=60',
+32 verbose headers   'content-length': '97',
+32 verbose headers   'accept-ranges': 'bytes',
+32 verbose headers   date: 'Mon, 30 Nov 2015 04:41:18 GMT',
+32 verbose headers   via: '1.1 varnish',
+32 verbose headers   connection: 'keep-alive',
+32 verbose headers   'x-served-by': 'cache-dfw1833-DFW',
+32 verbose headers   'x-cache': 'MISS',
+32 verbose headers   'x-cache-hits': '0',
+32 verbose headers   'x-timer': 'S1448858477.187765,VS0,VE876' }
+33 verbose request invalidating /root/.npm/registry.npmjs.org/nodejs-oneline on PUT
+34 error publish Failed PUT 403
+35 verbose stack Error: "You cannot publish over the previously published version 0.0.3-a." : nodejs-oneline
+35 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:247:14)
+35 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:170:14)
+35 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:354:22)
+35 verbose stack     at emitTwo (events.js:87:13)
+35 verbose stack     at Request.emit (events.js:172:7)
+35 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1207:14)
+35 verbose stack     at emitOne (events.js:82:20)
+35 verbose stack     at Request.emit (events.js:169:7)
+35 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1153:12)
+35 verbose stack     at emitNone (events.js:72:20)
+36 verbose statusCode 403
+37 verbose pkgid nodejs-oneline
+38 verbose cwd /var/www/dev/oneline-brokers/nodejs-oneline
+39 error Linux 2.6.18-400.el5xen
+40 error argv "/node-4.1.2/node-v4.1.2-linux-x64/bin/node" "/usr/local/bin/npm" "publish" "--tag" "beta"
+41 error node v4.2.2
+42 error npm  v2.11.3
+43 error code E403
+44 error "You cannot publish over the previously published version 0.0.3-a." : nodejs-oneline
+45 error If you need help, you may report this error at:
+45 error     <https://github.com/npm/npm/issues>
+46 verbose exit [ 1, true ]
