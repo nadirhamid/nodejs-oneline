@@ -17,7 +17,8 @@ in the interchange language used by the Server and Client (BSON).
 
 Example Usage
 -------------------------------------------------------------
-   
+
+```
   Oneline.listen("MyModule", function() {
       Oneline.on("receiver", function(message) {
         // this is a message being received from the server
@@ -37,17 +38,18 @@ Example Usage
        // on an ended connection
       });
     });
+```
 
 You can subscribe to multiple modules
 
+```
   Oneline.listen("Module1", function() {
       // baseline setup for Module1
   });
   Oneline.listen("Module2", function() {
       // baseline setup for Module2
   });
-
-
+```
 
 
 
